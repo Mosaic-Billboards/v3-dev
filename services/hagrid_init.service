@@ -1,0 +1,9 @@
+[Unit]
+Description=Hagrid Initialization
+After=multi-user.target
+
+[Service]
+ExecStart=/usr/bin/bash /usr/bin/hagrid/services/hagrid_init.sh
+
+[Install]
+WantedBy=multi-user.target
