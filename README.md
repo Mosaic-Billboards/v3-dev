@@ -27,7 +27,7 @@ A variety of cron jobs
 5. fetch_handle_ads -> fetches and handles new paid ads/expired ads every 4 hours.
 
 # display
-- simple Python Tkinter process that runs
+- simple Python Tkinter process
 - we create a pipe that can recieve messages from other processes
 
 # about this code
