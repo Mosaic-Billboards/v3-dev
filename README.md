@@ -1,4 +1,4 @@
-# v3-dev
+# v3-firmware-dev
 
 Custom linux firmware system for IoT digital billboards.
 
