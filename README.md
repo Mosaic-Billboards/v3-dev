@@ -4,22 +4,22 @@ Custom linux firmware system for IoT digital billboards.
 
 Boots into different modes depending on WiFi connection status:
 (boot controlled by systemd services in /services)
-1. setup_mode
-2. live_mode
+- setup_mode
+- live_mode
 
 ## setup_mode
 - Interacts with bluetooth stack (BlueZ) through DBus
 - BLE advertising, awaits connection, handles process for validating connection, recieves WiFi creds, and connects.
 
-ble_objects.py --> Base BLE classes for Application, Service, Characteristic, and Descriptor
-ble_app.py --> Custom service, 4 control characteristics, and state classes.
+- ble_objects.py --> Base BLE classes for Application, Service, Characteristic, and Descriptor
+- ble_app.py --> Custom service, 4 control characteristics, and state classes.
 
 ## live_mode
 - handles content rotation loop
 - interacts with display controller and local SQLite data
 
 ## jobs
-- a variety of cron jobs
+A variety of cron jobs
 1. ping -> pings backend once a minute.
 2. auth -> refreshes billboard auth token once every 50 min.
 3. firmware -> checks firmware updates once an hour.
