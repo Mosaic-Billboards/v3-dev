@@ -32,3 +32,5 @@ ble_app.py --> Custom service, 4 control characteristics, and state classes.
 
 # about this code
 This system isn't fully functional, parts work, other parts don't, but there's code others may find useful, so thought to make it public.
+
+Built by Aaren Stade, Summer 2021
